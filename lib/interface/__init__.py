@@ -84,7 +84,7 @@ def opcaoCadastro():
 
 
 def sortearDados(val):
-    """Gerar dados aleatorios baseado em listas
+    """Sortear dados aleatorios baseado em listas
 
     Args:
         val (str): Valores de opcao escolhida pelo usuário
@@ -101,12 +101,12 @@ def sortearDados(val):
         item = int(item)  # Casting de str para int
         
         if item == 1:
-            print(choice(nome))
+            return choice(nome)
         elif item == 2:
-            print(choice(email))
+            return choice(email)
         elif item == 3:
-            print(choice(telefone))
+            return choice(telefone)
         elif item == 4:
-            print(choice(cidade))
+            return choice(cidade)
         elif item == 5:
-            print(choice(estado))
+            return choice(estado)

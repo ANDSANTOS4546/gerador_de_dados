@@ -1,5 +1,11 @@
+from lib.arquivo import *
 from lib.interface import *
 from time import sleep
+
+# Verifcar existencia do arquivo de dados
+dados = 'dados.txt'
+if not verificarArquvio(dados):
+    criarArquivo(dados)
 
 while True:
     # Menu principal do sistema
@@ -13,7 +19,8 @@ while True:
 
     # Opção para exibir os dados cadastrados
     if sel == 1:
-        pass
+        cabecalho('DADOS CADASTRADOS')
+        lerArquivo(dados)
 
     # Opção para gerar novos dados
     elif sel == 2:
