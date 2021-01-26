@@ -27,6 +27,8 @@ while True:
             'Estado',
         ])
         op = opcaoCadastro()
+        
+        # Gerar dados da(s) opção(ões) selecionada(s)
         sortearDados(op)
         
         
