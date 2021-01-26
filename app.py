@@ -39,5 +39,3 @@ while True:
         print('Escolha uma opção válida.')
 
     sleep(1)
-
-print('teste')
