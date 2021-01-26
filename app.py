@@ -27,6 +27,8 @@ while True:
             'Estado',
         ])
         op = opcaoCadastro()
+        dados(op)
+        
         
     # Opção para encerrar o sistema
     elif sel == 3:

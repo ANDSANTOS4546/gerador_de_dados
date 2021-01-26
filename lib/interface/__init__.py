@@ -82,7 +82,7 @@ def opcaoCadastro():
     opcao = str(input('Opção(ões) de cadastro: ')).split(',')
     return opcao
 
-""" 
+
 def dados(val):
     from random import choice
 
@@ -92,5 +92,16 @@ def dados(val):
     cidade = ['São Paulo', 'Barueri', 'Monte Alto', 'Ferraz de Vasconcelos', 'Guarulhos']
     estado = ['SP', 'SC', 'MG', 'RJ', 'PB']
 
-    choice(val)
-"""
+    for item in val:
+        item = int(item)  # Casting de str para int
+        
+        if item == 1:
+            print(choice(nome))
+        elif item == 2:
+            print(choice(email))
+        elif item == 3:
+            print(choice(telefone))
+        elif item == 4:
+            print(choice(cidade))
+        elif item == 5:
+            print(choice(estado))
