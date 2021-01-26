@@ -2,7 +2,7 @@ from lib.interface import *
 from time import sleep
 
 while True:
-    
+
     # Menu principal do sistema
     cabecalho('MENU PRINCIPAL')
     menuPrincipal([
@@ -26,8 +26,8 @@ while True:
             'Cidade',
             'Estado',
         ])
-        sel2 = opcaoCadastro()
-
+        op = opcaoCadastro()
+        
     # Opção para encerrar o sistema
     elif sel == 3:
         cabecalho('Saindo... Até a próxima.')
@@ -39,3 +39,5 @@ while True:
         print('Escolha uma opção válida.')
 
     sleep(1)
+
+print('teste')

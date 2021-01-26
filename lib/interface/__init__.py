@@ -79,10 +79,8 @@ def opcaoCadastro():
     Returns:
         int : Opcao informada convertida para inteiro
     """
-    args = str(input('Opção de cadastro: ')).split(',')
-    for numero in args:
-        return int(numero)
-
+    opcao = str(input('Opção de cadastro: ')).split(',')
+    return opcao
 
 """ 
 def dados(val):
