@@ -2,7 +2,6 @@ from lib.interface import *
 from time import sleep
 
 while True:
-
     # Menu principal do sistema
     cabecalho('MENU PRINCIPAL')
     menuPrincipal([
@@ -19,6 +18,7 @@ while True:
     # Opção para gerar novos dados
     elif sel == 2:
         cabecalho('CADASTRAR NOVOS DADOS')
+        print('Escolha uma ou mais opções abaixo:')
         menuSecundario([
             'Nome',
             'E-mail',
