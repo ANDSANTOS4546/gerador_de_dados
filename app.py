@@ -27,7 +27,7 @@ while True:
             'Estado',
         ])
         op = opcaoCadastro()
-        dados(op)
+        sortearDados(op)
         
         
     # Opção para encerrar o sistema

@@ -83,7 +83,12 @@ def opcaoCadastro():
     return opcao
 
 
-def dados(val):
+def sortearDados(val):
+    """Gerar dados aleatorios baseado em listas
+
+    Args:
+        val (str): Valores de opcao escolhida pelo usuário
+    """
     from random import choice
 
     nome = ['André', 'Anne', 'Fernando', 'Satoru', 'Rafael']
