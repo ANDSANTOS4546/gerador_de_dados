@@ -21,7 +21,9 @@ while True:
     if sel == 1:
         cabecalho('DADOS CADASTRADOS')
         lerArquivo(dados)
-
+        print(linha())
+        input('Enter para continuar...')
+        
     # Opção para gerar novos dados
     elif sel == 2:
         cabecalho('CADASTRAR NOVOS DADOS')
@@ -34,10 +36,14 @@ while True:
             'Estado',
         ])
         op = opcaoCadastro()
+        print('Gerando dados...')
         
         # Gerar dados da(s) opção(ões) selecionada(s)
-        sortearDados(op)
-        
+        for item in op:
+            sorteio = sortearDados(item)
+            cadastrar(dados, sorteio)
+        sleep(1)
+        print('Dados gerados com sucesso.')
         
     # Opção para encerrar o sistema
     elif sel == 3:

@@ -23,12 +23,19 @@ def lerArquivo(nome):
         print('Erro ao tentar abrir o arquivo')
     else:
         for linha in arquivo:
-            print(linha)
+            print(linha, end='')
         arquivo.close()
 
 
-def cadastrar(arq):
+def cadastrar(nome, valor):
     try:
-        arq = open(arq, 'at')
+        arquivo = open(nome, 'at', encoding="utf-8")
     except:
-        pass
+        print('Erro ao tentar ler arquivo')
+    else:
+        try:
+            arquivo.write(f'{valor}\n')
+        except:
+            print('Erro ao tentar escrever arquivo')
+        else:
+            arquivo.close()
