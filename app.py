@@ -11,8 +11,8 @@ while True:
     # Menu principal do sistema
     cabecalho('MENU PRINCIPAL')
     menuPrincipal([
-        'Ver dados cadastrados',
-        'Cadastrar novos dados',
+        'Ver dados gerados',
+        'Gerar novos dados',
         'Sair do sistema'
     ])
     sel = opcao_menu_principal()
