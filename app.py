@@ -1,6 +1,7 @@
 from lib.arquivo import *
 from lib.interface import *
 from time import sleep
+from os import system
 
 # Verifcar existencia do arquivo de dados
 dados = 'dados.txt'
@@ -17,8 +18,9 @@ while True:
     ])
     sel = opcao_menu_principal()
 
-    # Opção para exibir os dados cadastrados
+    # Opção para exibir os dados gerados
     if sel == 1:
+        system('cls')
         cabecalho('DADOS GERADOS')
         lerArquivo(dados)
         print(linha())
@@ -26,6 +28,7 @@ while True:
         
     # Opção para gerar novos dados
     elif sel == 2:
+        system('cls')
         cabecalho('GERAR NOVOS DADOS')
         print('Escolha uma ou mais opções abaixo:')
         menuSecundario([
@@ -47,6 +50,7 @@ while True:
         
     # Opção para encerrar o sistema
     elif sel == 3:
+        system('cls')
         cabecalho('Saindo... Até a próxima.')
         sleep(1)
         break
@@ -55,4 +59,5 @@ while True:
     else:
         print('Escolha uma opção válida.')
 
+    system('cls')
     sleep(1)
