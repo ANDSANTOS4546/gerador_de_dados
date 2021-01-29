@@ -25,7 +25,7 @@ while True:
         lerArquivo(dados)
         print(linha())
         input('Enter para continuar...')
-        
+
     # Opção para gerar novos dados
     elif sel == 2:
         system('cls')
@@ -40,14 +40,14 @@ while True:
         ])
         op = opcaoCadastro()
         print('Gerando dados...')
-        
+
         # Gerar dados da(s) opção(ões) selecionada(s)
         for item in op:
             sorteio = sortearDados(item)
             gerar(dados, sorteio)
         sleep(1)
         print('Dados gerados com sucesso.')
-        
+
     # Opção para encerrar o sistema
     elif sel == 3:
         system('cls')
