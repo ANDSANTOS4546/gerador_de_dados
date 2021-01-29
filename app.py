@@ -11,7 +11,7 @@ if not verificarArquvio(dados):
 while True:
     # Menu principal do sistema
     cabecalho('MENU PRINCIPAL')
-    menuPrincipal([
+    formatarMenu([
         'Ver dados gerados',
         'Gerar novos dados',
         'Sair do sistema'
@@ -31,7 +31,7 @@ while True:
         system('cls')
         cabecalho('GERAR NOVOS DADOS')
         print('Escolha uma ou mais opções abaixo:')
-        menuSecundario([
+        formatarMenu([
             'Nome',
             'E-mail',
             'Telefone',

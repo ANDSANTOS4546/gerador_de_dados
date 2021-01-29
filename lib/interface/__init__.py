@@ -41,7 +41,7 @@ def leiaInt(msg):
             return n
 
 
-def menuPrincipal(lista):
+def formatarMenu(lista):
     """Criar menu formatado sobre uma lista
 
     Args:
@@ -60,17 +60,6 @@ def opcao_menu_principal():
     """
     op = leiaInt('Sua opção: ')
     return op
-
-
-def menuSecundario(lista):
-    """Menu de geracao de cadastro
-
-    Args:
-        lista (str): Lista com as opcoes do sub menu
-    """
-    for pos, item in enumerate(lista):
-        print(f'[{pos+1}] - {item}')
-    print(linha())
 
 
 def opcaoCadastro():
