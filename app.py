@@ -44,7 +44,7 @@ while True:
         # Gerar dados da(s) opção(ões) selecionada(s)
         for item in op:
             sorteio = sortearDados(item)
-            cadastrar(dados, sorteio)
+            gerar(dados, sorteio)
         sleep(1)
         print('Dados gerados com sucesso.')
         

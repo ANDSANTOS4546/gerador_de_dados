@@ -1,4 +1,12 @@
 def verificarArquvio(nome):
+    """Verificar existencia do Arquivo
+
+    Args:
+        nome (str): nome do arquivo
+
+    Returns:
+        bool: True or False
+    """
     try:
         arquivo = open(nome, 'rt')
         arquivo.close()
@@ -9,6 +17,11 @@ def verificarArquvio(nome):
 
 
 def criarArquivo(nome):
+    """Criar o arquivo txt
+
+    Args:
+        nome (str): Nome que sera atribuido ao arquivo txt
+    """
     try:
         arquivo = open(nome, 'wt+')
         arquivo.close()
@@ -17,6 +30,11 @@ def criarArquivo(nome):
 
 
 def lerArquivo(nome):
+    """Ler o arquivo txt criado
+
+    Args:
+        nome (str): Nome do arquivo txt criado
+    """
     try:
         arquivo = open(nome, 'rt', encoding='utf-8')
     except:
@@ -27,7 +45,13 @@ def lerArquivo(nome):
         arquivo.close()
 
 
-def cadastrar(nome, valor):
+def gerar(nome, valor):
+    """Inserir valores gerados no arquivo informado
+
+    Args:
+        nome (str): Nome do arquivo txt
+        valor (str): Dado que sera escrito no arquivo
+    """
     try:
         arquivo = open(nome, 'at', encoding="utf-8")
     except:
