@@ -19,14 +19,14 @@ while True:
 
     # Opção para exibir os dados cadastrados
     if sel == 1:
-        cabecalho('DADOS CADASTRADOS')
+        cabecalho('DADOS GERADOS')
         lerArquivo(dados)
         print(linha())
         input('Enter para continuar...')
         
     # Opção para gerar novos dados
     elif sel == 2:
-        cabecalho('CADASTRAR NOVOS DADOS')
+        cabecalho('GERAR NOVOS DADOS')
         print('Escolha uma ou mais opções abaixo:')
         menuSecundario([
             'Nome',
