@@ -53,6 +53,7 @@ while True:
         system('cls')
         cabecalho('Saindo... Até a próxima.')
         sleep(1)
+        system('cls')
         break
 
     # Mensagem caso o usuário escolha uma opção invalida
