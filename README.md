@@ -1,2 +1,2 @@
 # gerador_de_dados
-Gerador de dados para testes em Python
+O projeto é um gerador de dados para teste totalmente em Python, nele você consegue informar quais dados serão gerados e ele ira salva-los em um arquivo .txt, sendo possivel exibir os dados gerados logo em seguida. Ele conta com um menu onde é possivel escolher entre exibir os dados gerados, gerar novos dados e uma opção para encerrar o sistema. Nele foi usado o conceito de modularização, funções e tratamentos de exceções, fora outros conceitos básicos de Python.
