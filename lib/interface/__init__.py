@@ -22,7 +22,7 @@ def cabecalho(msg):
     print(linha())
 
 
-def leiaInt(msg):
+def leia_int(msg):
     """Ler numeros inteiros
 
     Args:
@@ -41,7 +41,7 @@ def leiaInt(msg):
             return n
 
 
-def formatarMenu(lista):
+def formatar_menu(lista):
     """Criar menu formatado sobre uma lista
 
     Args:
@@ -58,21 +58,21 @@ def opcao_menu_principal():
     Returns:
         int: Opcao informada
     """
-    op = leiaInt('Sua opção: ')
+    op = leia_int('Sua opção: ')
     return op
 
 
-def opcaoCadastro():
+def opcao_cadastro():
     """Ler opcao informada pelo usuário
 
     Returns:
         int : Opcao informada convertida para inteiro
-    """ 
+    """
     opcao = str(input('Opção(ões) de cadastro: ')).split(',')
     return opcao
 
 
-def sortearDados(val):
+def sortear_dados(val):
     """Sortear dados aleatorios baseado em listas
 
     Args:
@@ -81,14 +81,17 @@ def sortearDados(val):
     from random import choice
 
     nome = ['André', 'Anne', 'Fernando', 'Satoru', 'Rafael']
-    email = ['andre@hotmail.com', 'anne@yahoo.com.br', 'fernando@outlook.com', 'satoru@gmail.com.br', 'rafael@bol.com']
-    telefone = ['9 7858-9985', '9 5843-9416', '9 8573-2493', '9 8092-5482', '9 7543-5426']
-    cidade = ['São Paulo', 'Barueri', 'Monte Alto', 'Ferraz de Vasconcelos', 'Guarulhos']
+    email = ['andre@hotmail.com', 'anne@yahoo.com.br',
+             'fernando@outlook.com', 'satoru@gmail.com.br', 'rafael@bol.com']
+    telefone = ['9 7858-9985', '9 5843-9416',
+                '9 8573-2493', '9 8092-5482', '9 7543-5426']
+    cidade = ['São Paulo', 'Barueri', 'Monte Alto',
+              'Ferraz de Vasconcelos', 'Guarulhos']
     estado = ['SP', 'SC', 'MG', 'RJ', 'PB']
 
     for item in val:
         item = int(item)  # Casting de str para int
-        
+
         if item == 1:
             return choice(nome)
         elif item == 2:

@@ -5,13 +5,13 @@ from os import system
 
 # Verifcar existencia do arquivo de dados
 dados = 'dados.txt'
-if not verificarArquvio(dados):
-    criarArquivo(dados)
+if not verificar_arquvio(dados):
+    criar_arquivo(dados)
 
 while True:
     # Menu principal do sistema
     cabecalho('MENU PRINCIPAL')
-    formatarMenu([
+    formatar_menu([
         'Ver dados gerados',
         'Gerar novos dados',
         'Sair do sistema'
@@ -22,7 +22,7 @@ while True:
     if selecao == 1:
         system('cls')
         cabecalho('DADOS GERADOS')
-        lerArquivo(dados)
+        ler_arquivo(dados)
         print(linha())
         input('Enter para continuar...')
 
@@ -31,20 +31,20 @@ while True:
         system('cls')
         cabecalho('GERAR NOVOS DADOS')
         print('Escolha uma ou mais opções abaixo:')
-        formatarMenu([
+        formatar_menu([
             'Nome',
             'E-mail',
             'Telefone',
             'Cidade',
             'Estado',
         ])
-        opcao = opcaoCadastro()
+        opcao = opcao_cadastro()
         print('Gerando dados...')
 
         # Gerar dados da(s) opção(ões) selecionada(s)
         for item in opcao:
-            sorteio = sortearDados(item)
-            gerar(dados, sorteio)
+            sorteio = sortear_dados(item)
+            gerar_dados(dados, sorteio)
         sleep(1)
         print('Dados gerados com sucesso.')
 

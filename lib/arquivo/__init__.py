@@ -1,4 +1,4 @@
-def verificarArquvio(nome):
+def verificar_arquvio(nome):
     """Verificar existencia do Arquivo
 
     Args:
@@ -16,7 +16,7 @@ def verificarArquvio(nome):
         return True
 
 
-def criarArquivo(nome):
+def criar_arquivo(nome):
     """Criar o arquivo txt
 
     Args:
@@ -29,7 +29,7 @@ def criarArquivo(nome):
         print(f'Erro ao tentar criar arquivo {nome}')
 
 
-def lerArquivo(nome):
+def ler_arquivo(nome):
     """Ler o arquivo txt criado
 
     Args:
@@ -45,7 +45,7 @@ def lerArquivo(nome):
         arquivo.close()
 
 
-def gerar(nome, valor):
+def gerar_dados(nome, valor):
     """Inserir valores gerados no arquivo informado
 
     Args:
